@@ -1,0 +1,6 @@
+<h2>Customer list:</h2>
+<br>
+<li *ngFor="let customer of customers; let i=index">
+  ({{i+1}}) - {{customer.name}}
+  <a [routerLink]="['/customer-edit',customer.custId]" >Editar</a>
+</li>
